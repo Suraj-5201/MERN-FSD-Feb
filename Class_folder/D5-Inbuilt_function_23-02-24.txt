@@ -1,0 +1,10 @@
+In our discussion, we delved into the topic of built-in functions, examining how they simplify coding tasks. We then explored the internal workings of these functions, gaining insight into their implementation within a program.
+arr.push()
+arr.pop()
+arr.shift()
+arr.unshift()
+arr.slice()
+typeof()
+arr.sort()
+.toUpperCase()
+.toLowerCase()
