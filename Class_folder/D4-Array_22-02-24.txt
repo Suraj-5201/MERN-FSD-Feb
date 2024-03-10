@@ -1,0 +1,1 @@
+In our discussion, we explored various programs involving arrays, such as printing all values in an array and performing basic operations on array elements. We also discussed how to find the minimum or maximum value in an array. Following that, we delved into functions, including how to declare and call them, and their uses in programming
