@@ -1,0 +1,1 @@
+We solved several time complexity problems involving different conditions and loops in programs. An important note from this class is the ordering of various complexities: log n < √n < n log n < n√n < n^2 < n^3 < 2^n
