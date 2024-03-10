@@ -1,3 +1,5 @@
+//3. Create a calculator using function for each operartions -  sum, subraction, multiplication and division of 2 integers provided by user
+
 const readline = require('readline')
 
 let rl = readline.createInterface({
