@@ -1,0 +1,19 @@
+2. 
+What is the time complexity of following code:
+ 
+let a = 0, let i = N; 
+while (i > 0) { 
+    a += i; 
+    i /= 2; 
+}
+
+->
+
+for every iteration i divdes by 2
+
+like n , n/2, (n/2)2 , ... = n, n/2, n/4, n/6
+
+so we have log₂(n)
+
+apply Big O
+O(log₂(n))
