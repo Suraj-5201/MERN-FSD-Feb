@@ -1,0 +1,1 @@
+We discussed how to create, add, and commit folders, as well as how to create features. Additionally, we covered several more commands in this session. We discussed merging features into folders and, finally, creating a GitHub account.
