@@ -1,0 +1,1 @@
+It was the first day. I gained knowledge about program, programming languages, and also discussed the process of programming. We discussed JavaScript in the VS Code platform, including how to declare variables and how to print.

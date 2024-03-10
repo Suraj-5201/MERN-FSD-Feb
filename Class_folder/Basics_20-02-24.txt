@@ -1,0 +1,1 @@
+We discussed actions on data, including arithmetic operations, assignment operators, comparison and logical operators. I also learned about conditional statements and the syntax of if and if-else conditions. Based on this, we discussed some programs and executed them in VS Code.
