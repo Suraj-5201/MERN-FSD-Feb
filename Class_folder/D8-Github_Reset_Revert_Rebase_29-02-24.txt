@@ -1,0 +1,1 @@
+We discussed resets, specifically the types of resets available. Following that, we covered revert and rebase. Finally, we discussed the concepts of public and private repositories, including how to create them and how to clone a public repository to the local system.
