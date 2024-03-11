@@ -17,5 +17,10 @@ function solve(n)
 
 ->
 
+i divides by 2 in each iteration 
+so ans is log n
+
+=O(log n)
+
 
 
