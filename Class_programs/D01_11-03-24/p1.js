@@ -57,3 +57,11 @@ console.log(arr,"arr")
 console.log(cum_arr,"Cummulative array")
 cum_odd_arr(arr)
 cum_even_arr(arr)
+
+
+/*OUTPUT
+
+[ 1, 2, 3, 4, 5, 6 ] arr
+[ 1, 3, 6, 10, 15, 21 ] Cummulative array
+[ 0, 2, 2, 6, 6, 12 ] cummulative odd array
+[ 1, 1, 4, 4, 9, 9 ] cummulative even array   */
