@@ -1,0 +1,1 @@
+In this class, we discussed cumulative arrays and worked on programs to find equilibrium indices. We also talked about cumulative odd arrays and cumulative even arrays. We concluded by introducing the next day's topic, which is the carry-forward method
