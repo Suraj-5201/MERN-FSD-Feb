@@ -18,7 +18,11 @@ If there are more than one equilibrium indexes then return the minimum index.
 constraints:
 
 1 <= N <= 10^5
--10^5 <= A[i] <= 10^5 */
+-10^5 <= A[i] <= 10^5 
+*/
+
+
+
 
 let arr = [-7,1,5,2,-4,3,0]      //Input1
 //let arr = [1,2,3]              //Input 2
