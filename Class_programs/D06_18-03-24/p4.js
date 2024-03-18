@@ -1,3 +1,4 @@
+// Given a sentence, find the duplicate words
 let s1 = 'I am suraj and i am from shimoga'
 let arr = s1.toLowerCase().split(' ')
 let counts = {}

@@ -1,3 +1,4 @@
+//Given a sentence, delete multiple duplication and re create the sentence.
 let s1 = 'I am suraj and i am from shimoga'
 let arr = s1.toLowerCase().split(' ')
 let counts = {}
