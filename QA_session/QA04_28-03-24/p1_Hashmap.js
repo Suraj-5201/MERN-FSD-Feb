@@ -17,28 +17,8 @@ Input: nums = [1,1,1,3,3,4,3,2,4,2]
 Output: true
 */
 
-let arr = [1,2,3,1]
-//arr.sort()
+let arr = [1,1,1,3,3,4,3,2,4,2]
 let count ={}
-
-let arr2 = []
-
-/*function check()
-{
-    for(let i=0;i<arr.length;i++)
-    {
-    for(let j=i+1;j<arr.length;j++)
-        {
-            if(arr[i]==arr[j])
-            {
-                console.log("true")
-            }
-        }
-    }
-}
-
-check()*/
-
 
 function hashmap(arr)
 {
@@ -46,7 +26,7 @@ function hashmap(arr)
     {
         let num = arr[i]
         let flag=0
-        for(let key in num)
+        for(let key in count)
         {
             if(key==num)
             {
@@ -54,18 +34,27 @@ function hashmap(arr)
                 flag=1
                 break
             }
-            if(flag==0)
+        }
+        if(flag==0)
             {
                 count[num]=1
             }
-        }
-        return count
     }
-
-    for(let num in count)
-    {
-        console.log(`${num}:${count[num]}`)
-    }
+    return count
 }
 
 hashmap(arr)
+let flag=0
+for(let num in count)
+{
+    if(count[num]>1)
+    {
+        console.log("True")
+        flag=1
+        break
+    } 
+}
+if(flag==0)
+{
+    console.log("False")
+}
