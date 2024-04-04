@@ -12,20 +12,16 @@ Note that [10, 5, 2] is not included as the product of 100 is not strictly less 
 
 let arr = [10,5,2,6]
 let p=1
-let p1 = 1
-let arr2 = []
 let count=0
 let result = 0
 
 
 for(let i=0;i<arr.length;i++)
 {
-    for(let j=i;j<arr.length;j++)
-    {
-        for(let k=i;k<=j;k++)
-        {
-            p = p * arr[k]
-        }
+    for(let j=i+1;j<arr.length;j++)
+    { 
+        p = arr[i]*arr[j]
+        console.log(i,j)
         if(p<100)
         {
             count++

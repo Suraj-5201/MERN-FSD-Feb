@@ -19,7 +19,7 @@ Explaination1:
 
 
 //Brutforce method
-let a = 29 //10101
+let a = 21 //10101
 i=5
 count=0
 
@@ -27,12 +27,13 @@ count=0
 for(let i=1;i<=5;i++)
 {
     let result = a & (1<<i-1)
-
-    if(result==1 || result==2 || result==4 || result==8 ||result==16)
+    let f = Math.pow(2,(i-1))
+   // console.log(f)
+    if(result==f)
     {
         count++
     }
-}
 
+}
 
 console.log(count)

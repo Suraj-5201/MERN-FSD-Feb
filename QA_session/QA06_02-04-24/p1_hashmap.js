@@ -12,24 +12,9 @@ Input: nums = [2,2,1,1,1,2,2]
 */
 
 let arr = [2,2,1,1,1,2,2]
-let n=10
 let count ={}
 
 let n = arr.length/2
-
-
-function majority(arr)
-{
-   for(let i=0;i<n;i++)
-   {
-    for(let j=i;j<arr.length;j++)
-    {
-        if(arr[
-    }
-   }
-}
-
-
 
 function hashmap(arr)
 {
