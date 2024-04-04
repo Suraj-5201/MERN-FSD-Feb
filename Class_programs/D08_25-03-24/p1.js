@@ -78,3 +78,6 @@ let c4 = new Node("Suman",9445566778)
 
 list.append(c1)
 list.append(c2)
+list.append(c3)
+
+list.check_phno(9480413475)

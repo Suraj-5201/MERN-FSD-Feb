@@ -41,12 +41,7 @@ let arr1 = new stack(3)
 arr1.push(1)
 arr1.push(2)
 arr1.push(3)
-//arr1.display()
+arr1.display()
 
 arr1.pop()
-arr1.pop()
-arr1.pop()
 arr1.display()
-arr1.pop()
-//arr1.pop()
-//arr1.display
