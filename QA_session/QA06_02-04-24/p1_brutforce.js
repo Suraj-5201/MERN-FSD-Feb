@@ -1,19 +1,25 @@
-let arr = [2,2,1,1,1,2,2];
-let n = arr.length / 2;
-let arr2 = [];
-let i = arr.length - 1; // Start from the last index
+let arr = [2,2,1,1,1,2,2,3,3,3,3]
+arr.sort()
+let n = arr.length / 2
+let arr2 = []
+let N=10
 
-while (i >= 0) {
-    for (let j = 0; j < arr.length; j++) {
-        if (arr[i] == arr[j]) {
-            arr2.push(arr[j]);
+for(let i=0;i<N;i++)
+{
+    for(let j=0;j<arr.length;j++)
+    {
+        if(arr[i]==arr[j])
+        {
+            arr2.push(arr[j])
         }
     }
-    if (arr2.length == n) {
-        console.log(arr2);
+    if(arr2.length>n)
+    {
+        console.log(arr2[0])
+        break
     }
-    arr2 = [];
-    i++; // Increment i to avoid an infinite loop
 }
+
+
 
 
