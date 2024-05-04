@@ -1,0 +1,60 @@
+1. Detailed revenue and sales report by book title and genre:
+SELECT B.title,B.genre,SUM(s.totalprice) AS REVENUE
+FROM book_tables B
+JOIN Sales S
+ON B.bookId = S.bookId
+GROUP BY B.title,B.genre;
+
+2. Inventory and sales comparison for forecasting
+SELECT B.bookId,B.title,I.quantity AS total_Quantity, SUM(s.quantity) AS Sold_Quantity,(SUM(I.quantity)-SUM(S.quantity)) AS Left_quantity
+FROM inventory I
+Join book_tables B
+ON i.bookId = B.bookId
+Join Sales S
+ON I.bookId=S.bookId
+group by B.bookId,B.title,B.genre,I.quantity;
+
+3. Detailed customer purchase history:
+SELECT c.customerId, c.FirstName, c.LastName, s.salesId, s.bookID,B.title,B.author,B.genre, s.quantity, s.salesDate, s.totalPrice
+FROM customers c
+JOIN Sales s 
+ON c.customerId = s.customerId
+JOIN book_tables B
+ON S.bookId = B.bookId
+WHERE S.customerId is NOT NULL;
+
+4. Total Sales Revenue Per Genre
+SELECT B.genre,SUM(s.totalprice) AS REVENUE
+FROM book_tables B
+JOIN Sales S
+ON B.bookId = S.bookId
+GROUP BY B.genre;
+
+5. Books with Low Inventory
+SELECT B.bookId,B.title,I.quantity
+FROM book_tables B
+JOIN inventory I
+ON B.bookId = I.BookId
+where I.quantity <=10;
+
+6. Top 5 Customers by Total Spending
+SELECT S.customerId,C.FirstName,C.LastName,SUM(S.totalPrice) AS totalSales
+FROM sales S
+JOIN customers C
+ON S.customerId = C.customerId
+GROUP BY S.customerId,C.FirstName,C.LastName
+ORDER BY totalSales DESC
+LIMIT 5;
+
+7. Average Price of Books by Publisher
+SELECT publisher,AVG(price)
+FROM book_tables 
+group by publisher;
+
+8. Books Sold More Than 5 Times
+SELECT B.bookId,B.title,count(*)
+FROM sales S
+JOIN book_tables B
+ON S.bookId = B.bookId
+group by bookId
+having COUNT(*)>5;
