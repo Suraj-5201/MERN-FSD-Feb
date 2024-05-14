@@ -1,0 +1,16 @@
+3. Describe the scoping rules for variables declared with var, let, and const.
+
+1.Var
+	1. Scope: Function-scoped (or globally scoped if declared outside a function).
+	2. Hoisting: Variable declarations are hoisted (moved to the top) to the top of their function or global scope, but their assignments remain where they are.
+	3. Re-declaration: Allows re-declaration within the same scope.
+
+2.Let
+	1. Scope: Block-scoped (limited to the block {} in which it is declared).
+	2. Hoisting: Variable declarations are hoisted to the top of their block, but they are not initialized until their declaration statement is executed. Accessing 	   the variable before the initialization results in a ReferenceError.
+	3. Re-declaration: Does not allow re-declaration within the same scope.
+
+3.Const
+	1.Scope: Block-scoped (limited to the block {} in which it is declared).
+	2. Hoisting: Like let, variable declarations are hoisted to the top of their block, but they are not initialized until their declaration statement is executed. 	   Accessing the variable before the initialization results in a ReferenceError.
+	3. Re-declaration: Does not allow re-declaration or re-assignment. The value of a const variable cannot change through re-assignment, though its properties can 	   be modified if it's an object.
