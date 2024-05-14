@@ -1,0 +1,14 @@
+6. What are member variables?
+
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
+}
+
+let person1 = new Person('Suraj', 23);
+console.log(person1.name); // Output: Suraj
+console.log(person1.age); // Output: 23
+
+let person2 = new Person('Surya', 25);
+console.log(person2.name); // Output: Surya
+console.log(person2.age); // Output: 25
