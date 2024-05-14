@@ -1,0 +1,16 @@
+			Global Scope											Local Scope
+
+1. Variables declared outside of any function have global scope.				Variables declared inside a function or block have local scope.
+
+2. Accessible from anywhere in the code, including inside functions.				Accessible only within the function or block where they are declared.
+
+3. Exists until the application is terminated or the page is refreshed.				Limited to the lifetime of the function or block; they are destroyed 
+                             									when the function or block exits.
+
+4. Can lead to variable naming conflicts and security risks if not used carefully.		Helps in encapsulation and avoids naming conflicts by limiting variable 												scope to where they are needed
+
+
+
+
+
+
