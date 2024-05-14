@@ -1,0 +1,17 @@
+5. What is OOPS object oriented programming?
+
+OOP :
+Object-oriented programming is a programming paradigm based on the concept of objects, which can contain data and code: data in the form of fields, and code in the form of procedures.
+
+	1. Inheritance
+		Objects can inherit attributes and methods from other objects, promoting code reuse and creating a hierarchy of classes.
+
+	2. Poly-morphism
+		Poly means many morph means form, one task can perform in many ways are Poly-morphism.
+
+	3. Data Abstraction
+		Abstracting complex systems into simpler, more manageable objects helps in modeling real-world entities in a clear and concise manner.
+
+	4. Encapsulation
+		Wrapping of data is called Data encapsulation.
+		
