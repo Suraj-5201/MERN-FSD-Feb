@@ -1,0 +1,11 @@
+2. Explain the concept of hoisting in JavaScript. How does it affect variable declarations?
+
+console.log(x); // Output: undefined
+var x = 5
+Hoisting in JavaScript moves variable and function declarations to the top of their scope. This means you can use them before they are declared, but they will be initialized with the value undefined until the actual assignment occurs.
+
+console.log(y); // Throws ReferenceError: Cannot access 'y' before initialization
+let y = 10
+y is recognized as a variable in the scope, it doesn't actually exist until the line let y = 10; is executed. Trying to use y before this line will cause an error because y hasn't been set up yet.
+
+
