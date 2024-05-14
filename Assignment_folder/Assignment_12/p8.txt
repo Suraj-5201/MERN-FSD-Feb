@@ -1,0 +1,4 @@
+
+8. what is a constructor?
+
+In JavaScript, a constructor is a special type of function that is used to create and initialize objects created within a class. Constructors are typically used with classes (introduced in ECMAScript 2015) or with constructor functions.
