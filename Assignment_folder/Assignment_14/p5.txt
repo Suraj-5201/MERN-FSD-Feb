@@ -1,0 +1,8 @@
+5) Construct a  binary tree structure of your own choice
+-->
+
+         5
+       /   \
+      3     8
+     / \
+    1   4
